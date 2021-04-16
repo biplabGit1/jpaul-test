@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="idoc_Type" format="xml">
+      <types:shape format="xml-schema" element="ZDEBMAS06" location="schemas/customer master.xsd"/>
+    </types:type>
+    <types:type name="json_type" format="json">
+      <types:shape format="weave" example="examples/CUSTOMER_MASTER_JSON_FOR_WM_V1.txt"><![CDATA[%dw 2.0
+
+type json_type = {|
+  customerHeaders: Array<{|    recTimeStamp: String,     sourceSysId: String,     businessSector: String,     uid: String,     name: String,     locName: String,     active: String,     line1: String,     line2: String,     line3: String,     line4: String,     poBox: String,     town: String,     countyName: String,     region: String,     jnjGtState: String,     postalCode: String,     poBoxPostalCode: String,     countryCode: String,     countryName: String,     email: String,     payerInd: String,     shipToInd: String,     soldToInd: String,     accountGroupCode: String,     taxId: String,     stockPartnerInd: String,     endUserInd: String,     salesAgentInd: String,     surgeonInd: String,     centralOrderBlock: String,     division: String,     gstIn: String,     billToInd: String,     ghsIndicator: String  |}>, 
+  customerSalesOrgs: Array<{|    recTimeStamp: String,     sourceSysId: String,     businessSector: String,     salesOrg: String,     divison: String,     distributionChannel: String,     customerGroup: String,     userPriceGroup: String,     uid: String,     customerOrderBlock: String,     divisionDesc: String  |}>, 
+  partnerFunctions: Array<{|    recTimeStamp: String,     sourceSysId: String,     businessSector: String,     uid: String,     salesOrg: String,     division: String,     distributionChannel: String,     partnerFuncCode: String,     partnerFuncName: String,     partnerUid: String  |}>
+|} {"example": "{\\\"customerHeaders\\\":[{\\\"recTimeStamp\\\":\\\"\\\",\\\"sourceSysId\\\":\\\"\\\",\\\"businessSector\\\":\\\"\\\",\\\"uid\\\":\\\"\\\",\\\"name\\\":\\\"\\\",\\\"locName\\\":\\\"\\\",\\\"active\\\":\\\"\\\",\\\"line1\\\":\\\"\\\",\\\"line2\\\":\\\"\\\",\\\"line3\\\":\\\"\\\",\\\"line4\\\":\\\"\\\",\\\"poBox\\\":\\\"\\\",\\\"town\\\":\\\"\\\",\\\"countyName\\\":\\\"\\\",\\\"region\\\":\\\"\\\",\\\"jnjGtState\\\":\\\"\\\",\\\"postalCode\\\":\\\"\\\",\\\"poBoxPostalCode\\\":\\\"\\\",\\\"countryCode\\\":\\\"\\\",\\\"countryName\\\":\\\"\\\",\\\"email\\\":\\\"\\\",\\\"payerInd\\\":\\\"\\\",\\\"shipToInd\\\":\\\"\\\",\\\"soldToInd\\\":\\\"\\\",\\\"accountGroupCode\\\":\\\"\\\",\\\"taxId\\\":\\\"\\\",\\\"stockPartnerInd\\\":\\\"\\\",\\\"endUserInd\\\":\\\"\\\",\\\"salesAgentInd\\\":\\\"\\\",\\\"surgeonInd\\\":\\\"\\\",\\\"centralOrderBlock\\\":\\\"\\\",\\\"division\\\":\\\"\\\",\\\"gstIn\\\":\\\"\\\",\\\"billToInd\\\":\\\"\\\",\\\"ghsIndicator\\\":\\\"\\\"},{\\\"recTimeStamp\\\":\\\"\\\",\\\"sourceSysId\\\":\\\"\\\",\\\"businessSector\\\":\\\"\\\",\\\"uid\\\":\\\"\\\",\\\"name\\\":\\\"\\\",\\\"locName\\\":\\\"\\\",\\\"active\\\":\\\"\\\",\\\"line1\\\":\\\"\\\",\\\"line2\\\":\\\"\\\",\\\"line3\\\":\\\"\\\",\\\"line4\\\":\\\"\\\",\\\"poBox\\\":\\\"\\\",\\\"town\\\":\\\"\\\",\\\"countyName\\\":\\\"\\\",\\\"region\\\":\\\"\\\",\\\"jnjGtState\\\":\\\"\\\",\\\"postalCode\\\":\\\"\\\",\\\"poBoxPostalCode\\\":\\\"\\\",\\\"countryCode\\\":\\\"\\\",\\\"countryName\\\":\\\"\\\",\\\"email\\\":\\\"\\\",\\\"payerInd\\\":\\\"\\\",\\\"shipToInd\\\":\\\"\\\",\\\"soldToInd\\\":\\\"\\\",\\\"accountGroupCode\\\":\\\"\\\",\\\"taxId\\\":\\\"\\\",\\\"stockPartnerInd\\\":\\\"\\\",\\\"endUserInd\\\":\\\"\\\",\\\"salesAgentInd\\\":\\\"\\\",\\\"surgeonInd\\\":\\\"\\\",\\\"centralOrderBlock\\\":\\\"\\\",\\\"division\\\":\\\"\\\",\\\"gstIn\\\":\\\"\\\",\\\"billToInd\\\":\\\"\\\",\\\"ghsIndicator\\\":\\\"\\\"}],\\\"customerSalesOrgs\\\":[{\\\"recTimeStamp\\\":\\\"\\\",\\\"sourceSysId\\\":\\\"\\\",\\\"businessSector\\\":\\\"\\\",\\\"salesOrg\\\":\\\"\\\",\\\"divison\\\":\\\"\\\",\\\"distributionChannel\\\":\\\"\\\",\\\"customerGroup\\\":\\\"\\\",\\\"userPriceGroup\\\":\\\"\\\",\\\"uid\\\":\\\"\\\",\\\"customerOrderBlock\\\":\\\"\\\",\\\"divisionDesc\\\":\\\"\\\"},{\\\"recTimeStamp\\\":\\\"\\\",\\\"sourceSysId\\\":\\\"\\\",\\\"businessSector\\\":\\\"\\\",\\\"salesOrg\\\":\\\"\\\",\\\"divison\\\":\\\"\\\",\\\"distributionChannel\\\":\\\"\\\",\\\"customerGroup\\\":\\\"\\\",\\\"userPriceGroup\\\":\\\"\\\",\\\"uid\\\":\\\"\\\",\\\"customerOrderBlock\\\":\\\"\\\",\\\"divisionDesc\\\":\\\"\\\"}],\\\"partnerFunctions\\\":[{\\\"recTimeStamp\\\":\\\"\\\",\\\"sourceSysId\\\":\\\"\\\",\\\"businessSector\\\":\\\"\\\",\\\"uid\\\":\\\"\\\",\\\"salesOrg\\\":\\\"\\\",\\\"division\\\":\\\"\\\",\\\"distributionChannel\\\":\\\"\\\",\\\"partnerFuncCode\\\":\\\"\\\",\\\"partnerFuncName\\\":\\\"\\\",\\\"partnerUid\\\":\\\"\\\"},{\\\"recTimeStamp\\\":\\\"\\\",\\\"sourceSysId\\\":\\\"\\\",\\\"businessSector\\\":\\\"\\\",\\\"uid\\\":\\\"\\\",\\\"salesOrg\\\":\\\"\\\",\\\"division\\\":\\\"\\\",\\\"distributionChannel\\\":\\\"\\\",\\\"partnerFuncCode\\\":\\\"\\\",\\\"partnerFuncName\\\":\\\"\\\",\\\"partnerUid\\\":\\\"\\\"}]}"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#c1d88817-974d-4a98-bea4-ab50fe422b0b">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="idoc_Type"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="json_type"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

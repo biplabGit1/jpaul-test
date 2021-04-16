@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ZDEBMAS06>
+    <IDOC BEGIN="1">
+      <EDI_DC40 SEGMENT="1">
+        <TABNAM>EDI_DC40</TABNAM>
+        <MANDT>300</MANDT>
+        <DOCNUM>0000000000931730</DOCNUM>
+        <DOCREL>750</DOCREL>
+        <STATUS>30</STATUS>
+        <DIRECT>1</DIRECT>
+        <OUTMOD>2</OUTMOD>
+        <EXPRSS></EXPRSS>
+        <TEST></TEST>
+        <IDOCTYP>DEBMAS06</IDOCTYP>
+        <CIMTYP>ZDEBMAS06</CIMTYP>
+        <MESTYP>ZDEBMAS_HYB</MESTYP>
+        <MESCOD></MESCOD>
+        <MESFCT></MESFCT>
+        <STD></STD>
+        <STDVRS></STDVRS>
+        <STDMES></STDMES>
+        <SNDPOR>SAPDBK</SNDPOR>
+        <SNDPRT>LS</SNDPRT>
+        <SNDPFC></SNDPFC>
+        <SNDPRN>DBKCLNT300</SNDPRN>
+        <SNDSAD></SNDSAD>
+        <SNDLAD></SNDLAD>
+        <RCVPOR>HYBRIS_WEB</RCVPOR>
+        <RCVPRT>LS</RCVPRT>
+        <RCVPFC></RCVPFC>
+        <RCVPRN>HYBRIS_WEB</RCVPRN>
+        <RCVSAD></RCVSAD>
+        <RCVLAD></RCVLAD>
+        <CREDAT>20210401</CREDAT>
+        <CRETIM>155308</CRETIM>
+        <REFINT></REFINT>
+        <REFGRP></REFGRP>
+        <REFMES></REFMES>
+        <ARCKEY></ARCKEY>
+        <SERIAL>20210401155308</SERIAL>
+      </EDI_DC40>
+      <E1KNA1M SEGMENT="1">
+        <KUNNR>0001004545</KUNNR>
+        <KTOKD>0001</KTOKD>
+        <NAME1>CUREMED</NAME1>
+        <NAME2>CUREMED NAME2</NAME2>
+        <STCD1>BRN-19984</STCD1>
+        <STCD3>07AAATM1408N2ZJ</STCD3>
+        <ZE1ADRC SEGMENT="1">
+          <STREET>PLOT NO 2, SITE NO. 11</STREET>
+          <STR_SUPPL3>WEST PATEL NAGAR</STR_SUPPL3>
+          <CITY1>NEW DELHI</CITY1>
+          <REGION>30</REGION>
+          <BEZEI>Delhi</BEZEI>
+          <POST_CODE1>110008</POST_CODE1>
+          <COUNTRY>IN</COUNTRY>
+          <LANDX>India</LANDX>
+          <SMTP_ADDR>atiwari3@its.jnj.com</SMTP_ADDR>
+        </ZE1ADRC>
+        <ZE1KNA1M SEGMENT="1">
+          <PAYIND>1</PAYIND>
+          <SHPIND>1</SHPIND>
+          <BILIND>1</BILIND>
+          <SLDIND>1</SLDIND>
+          <STPIND>0</STPIND>
+          <ENDIND>0</ENDIND>
+          <SAIND>0</SAIND>
+          <SURIND>0</SURIND>
+          <SYSID>DBKCLNT300</SYSID>
+          <GHSIND>0</GHSIND>
+        </ZE1KNA1M>
+        <ZE1KNVVM SEGMENT="1">
+          <VKORG>IN10</VKORG>
+          <VTWEG>01</VTWEG>
+          <SPART>01</SPART>
+          <KDGRP>74</KDGRP>
+          <PLTYP>AI</PLTYP>
+          <VTEXT_S>Common</VTEXT_S>
+          <ZE1KNVPM SEGMENT="1">
+            <PARVW>AG</PARVW>
+            <KUNN2>0001004545</KUNN2>
+            <NAME1>CUREMED</NAME1>
+          </ZE1KNVPM>
+          <ZE1KNVPM SEGMENT="1">
+            <PARVW>RE</PARVW>
+            <KUNN2>0001004545</KUNN2>
+            <NAME1>CUREMED</NAME1>
+          </ZE1KNVPM>
+          <ZE1KNVPM SEGMENT="1">
+            <PARVW>RG</PARVW>
+            <KUNN2>0001004545</KUNN2>
+            <NAME1>CUREMED</NAME1>
+          </ZE1KNVPM>
+          <ZE1KNVPM SEGMENT="1">
+            <PARVW>WE</PARVW>
+            <KUNN2>0001004545</KUNN2>
+            <NAME1>CUREMED</NAME1>
+          </ZE1KNVPM>
+        </ZE1KNVVM>
+      </E1KNA1M>
+    </IDOC>
+  </ZDEBMAS06>
